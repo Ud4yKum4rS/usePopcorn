@@ -4,8 +4,9 @@ import "./index.css";
 import StarRating from "./starRating.js";
 import { useMovies } from "./useMovies.js";
 const KEY = "8e905f5";
+
 const average = (arr) =>
-  arr?.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
+  arr && arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 export default function App() {
   const [query, setQuery] = useState("");
