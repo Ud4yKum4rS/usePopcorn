@@ -227,7 +227,7 @@ function MovieDetails({
 
   useEffect(() => {}, []);
   const inList = watched
-    .map((watchedMovie) => watchedMovie.imdbID)
+    ?.map((watchedMovie) => watchedMovie.imdbID)
     .includes(selectedId);
 
   // Prettier ignore
@@ -369,9 +369,9 @@ function Box({ children }) {
 // }
 
 function Summary({ watched }) {
-  const avgImdbRating = average(watched.map((movie) => movie.imdbRating));
+  const avgImdbRating = average(watched?.map((movie) => movie.imdbRating));
   // const avgUserRating = average(watched.map((movie) => movie.userRating));
-  const avgRuntime = average(watched.map((movie) => movie.runtime));
+  const avgRuntime = average(watched?.map((movie) => movie.runtime));
 
   return (
     <div className="summary">
@@ -401,7 +401,7 @@ function Summary({ watched }) {
 function WatchedMovie({ watched, onDeleteFromWatchedList }) {
   return (
     <ul className="list">
-      {watched.map((movie) => (
+      {watched?.map((movie) => (
         <li key={movie.imdbID}>
           <img src={movie.poster} alt={`${movie.title} poster`} />
           <div style={{ display: "flex", justifyContent: "space-between" }}>
