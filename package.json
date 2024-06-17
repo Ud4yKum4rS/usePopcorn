@@ -2,7 +2,7 @@
   "name": "usepopcorn",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/UdayaKumarS-N05/usePopcorn",
+  "homepage": "https://udayakumars-n05.github.io/usePopcorn/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
