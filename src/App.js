@@ -223,7 +223,7 @@ function MovieDetails({
   const [isLoading, setIsLoading] = useState(false);
   const [userRating, setUserRating] = useState(0);
 
-  const countRef = useRef(0);
+  // const countRef = useRef(0);
 
   useEffect(() => {}, []);
   const inList = watched
